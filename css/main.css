@@ -1,4 +1,4 @@
-/* Primary Grid Layout Styles -----------------------------*/
+/* Primary Grid Layout Styles================================*/
 .container {
   max-width: 1024px;
   margin: 0 auto;
@@ -12,7 +12,7 @@
     "main";
 }
 
-/* Element Styles -----------------------------*/
+/* Element Styles ===========================================*/
 
 * {
   box-sizing: border-box;
@@ -89,7 +89,7 @@ textarea:focus {
   outline: 0;
 }
 
-/* Header Styles -----------------------------*/
+/* Header Styles=====================================================*/
 
 header {
   grid-area: header;
@@ -146,11 +146,11 @@ sup {
   margin: 0;
 }
 
-/* Navigation Styles -----------------------------*/
+/* Navigation Styles ==============================================*/
 
 nav {
   grid-area: nav;
-  background-color: #4d4c72;
+  background-color: #7477bf;
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
@@ -160,14 +160,14 @@ nav {
 nav div {
   padding: 10px;
   margin: 0;
-  border: 5px solid #4d4c72;
+  border: 5px solid #7477bf;
 }
 
 .active {
   border-bottom: 5px solid #2ecc71;
 }
 
-/* Main Styles -----------------------------*/
+/* Main Styles ====================================================*/
 
 main {
   grid-area: main;
@@ -280,13 +280,12 @@ main {
 
 .widget {
   text-align: center;
-  background-color: #fff;
   border: 1px solid lightgray;
   border-top: none;
   padding: 10px;
 }
 
-/* Traffic widget -------------------------------*/
+/* Traffic widget ===============================================*/
 
 .traffic {
   grid-area: traffic;
@@ -333,7 +332,6 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: #fafafa;
   margin: 20px;
   padding: 1rem 5px;
   border: 1px solid lightgray;
@@ -344,7 +342,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #7477bf;
+  background-color: #fff;
   border-radius: 100%;
   margin-left: 20px;
   width: 75px;

@@ -1,5 +1,5 @@
 
-// Traffic chart
+// Web Traffic Chart ===============================================*/
 var traffic = document.getElementById('traffic').getContext('2d');
 var lineChart = new Chart(traffic, {
   type: 'line',
@@ -37,7 +37,7 @@ var lineChart = new Chart(traffic, {
   }
 });
 
-// Daily-traffic chart
+// Daily Traffic Chart ==============================================*/
 var dailyTraffic = document.getElementById('daily-traffic').getContext('2d');
 var barChart = new Chart(dailyTraffic, {
   type: 'bar',
@@ -70,7 +70,7 @@ var barChart = new Chart(dailyTraffic, {
   }
 });
 
-//Mobile users charts
+//Mobile Users Charts ====================================================*/
 var mobileUsers = document.getElementById('mobile-users').getContext('2d');
 var doughnutChart = new Chart(mobileUsers, {
   type: 'doughnut',
