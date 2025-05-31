@@ -14,7 +14,7 @@
     <div class="container">
 
       <!-- Header Section -->
-      <header>
+      <header id="home">
         <h1><strong>Your</strong>App<sup>TM</sup></h1>
         <div class="user">
           <img class="header-icon" src="icons/bell.svg" alt="bell icon">
@@ -28,13 +28,13 @@
 
       <!-- Navigation Section -->
       <nav>
-        <div class="active"><button class="btn" id="home"><img class="nav-icon" src="icons/home.svg" alt="dashboard icon"></button></div>
+        <div class="active"><a href="#home"><button class="btn"><img class="nav-icon" src="icons/home.svg" alt="dashboard icon"></button></a></div>
         
-        <div><button class="btn" id="bar-chart"><img class="nav-icon" src="icons/bar-chart.svg" alt="members icon"></button></div>
+        <div><a href="#bar-chart"><button class="btn"><img class="nav-icon" src="icons/bar-chart.svg" alt="members icon"></button></a></div>
         
-        <div><button class="btn" id="members"><img class="nav-icon" src="icons/members.svg" alt="visits icon"></button></div>
+        <div><a href="#members"><button class="btn"><img class="nav-icon" src="icons/members.svg" alt="visits icon"></button></a></div>
         
-        <div><button class="btn" id="settings"><img class="nav-icon" src="icons/settings.svg" alt="settings icon"></button></div>
+        <div><a href="#settings"><button class="btn"><img class="nav-icon" src="icons/settings.svg" alt="settings icon"></button></a></div>
       </nav>
 
       <!-- Main Content Section -->
@@ -56,7 +56,7 @@
         </div>
 
         <!-- Traffic Section -->
-        <div class="traffic widget">
+        <div class="traffic widget" id="bar-chart">
           <h3>traffic</h3>
           <div class="time-interval">
             <div class="hourly">
@@ -129,7 +129,7 @@
         </div>
 
         <!-- New Members Section -->
-        <div class="new-members widget">
+        <div class="new-members widget" id="members">
           <h3>new members</h3>
           <div class="member-card"><!-- Member 1 -->
             <img class="profile-pic" src="images/member-1.jpg" alt="member1 profile pic">
@@ -245,7 +245,7 @@
         </div>
 
         <!-- Settings Section -->
-        <div class="settings widget">
+        <div class="settings widget" id="settings">
           <h3>settings</h3>
           <div class="message-fields">
             <div class="toggles">
