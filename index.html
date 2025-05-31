@@ -28,10 +28,13 @@
 
       <!-- Navigation Section -->
       <nav>
-        <div class="active"><img class="nav-icon" src="icons/home.svg" alt="dashboard icon"></div>
-        <div><img class="nav-icon" src="icons/bar-chart.svg" alt="members icon"></div>
-        <div><img class="nav-icon" src="icons/members.svg" alt="visits icon"></div>
-        <div><img class="nav-icon" src="icons/settings.svg" alt="settings icon"></div>
+        <div class="active"><button class="btn" id="home"><img class="nav-icon" src="icons/home.svg" alt="dashboard icon"></button></div>
+        
+        <div><button class="btn" id="bar-chart"><img class="nav-icon" src="icons/bar-chart.svg" alt="members icon"></button></div>
+        
+        <div><button class="btn" id="members"><img class="nav-icon" src="icons/members.svg" alt="visits icon"></button></div>
+        
+        <div><button class="btn" id="settings"><img class="nav-icon" src="icons/settings.svg" alt="settings icon"></button></div>
       </nav>
 
       <!-- Main Content Section -->
@@ -42,15 +45,11 @@
           <div class="db-container">
             <h2>dashboard</h2>
             <div class="dashboard-search-bg">
-              <input class="dashboard-search" name="dashboard-search" type="search" placeholder="Search">
-              <div class="mag-bg">
-                <img class="search-icon" src="icons/magnifying-glass.png" alt="magnifying glass icon">
-              </div>
             </div>
           </div>
           <div class="alert-container">
             <div class="alert">
-              <p><strong>Alert</strong> - New Message!</p>
+              <p><strong>Alert</strong> - You have unread messages!</p>
               <button class="btn-alert-x">&times;</button>
             </div>
          </div>
@@ -58,7 +57,7 @@
 
         <!-- Traffic Section -->
         <div class="traffic widget">
-          <h3>web traffic</h3>
+          <h3>traffic</h3>
           <div class="time-interval">
             <div class="hourly">
               <h4>hourly</h4>
