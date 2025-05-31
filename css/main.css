@@ -32,6 +32,8 @@ h2 {
 }
 
 h3 {
+  display: flex;
+  justify-content: flex-start;
   font-size: .9rem;
   margin: .9rem;
   text-transform: uppercase;
@@ -59,6 +61,7 @@ img {
 
 div {
  padding: 5px 0;
+ 
 }
 
 body {
@@ -67,8 +70,8 @@ body {
 }
 
 p {
-  font-size: 1rem;
-  font-weight: normal;
+  font-size: 13.5px;
+  font-weight:normal;
   line-height: 1.25rem;
     
 }
@@ -204,6 +207,12 @@ main {
  
 }
 
+.dashboard-search-bg, h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .db-container {
   margin: 0;
   padding: 0;
@@ -272,7 +281,6 @@ main {
   background-color: #7477bf;
   color: #fbfbfb;
   margin: 20px;
-  padding: 1rem 5px;
   border-radius: 5px;
 }
 
