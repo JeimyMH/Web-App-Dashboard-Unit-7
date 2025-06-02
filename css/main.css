@@ -26,9 +26,11 @@ h1 {
 }
 
 h2 {
+  display: flex;
+  justify-content: left;
+  font-size: 1rem;
   margin-left: 1rem;
-  font-size: 1.3rem;
-  text-transform: capitalize;
+
 }
 
 h3 {
@@ -61,7 +63,7 @@ img {
 
 div {
  padding: 5px 0;
- 
+
 }
 
 body {
@@ -204,13 +206,6 @@ main {
   grid-area: dashboard;
   background-color: #fff;
   text-align: center;
- 
-}
-
-.dashboard-search-bg, h2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .db-container {
@@ -220,10 +215,10 @@ main {
 
 .dashboard-search-bg {
   background-color: #fafafa;
-  margin: 20px;
-  padding: 10px;
-  border-bottom: 1px solid lightgray;
-  border-left: 1px solid lightgray;
+  width:70%;
+  padding: 15px;
+  border-bottom: 3px solid lightgray;
+  border-left: 3px solid lightgray;
 }
 
 .dashboard-search {
@@ -297,7 +292,6 @@ main {
 
 .widget {
   text-align: center;
-  padding: 10px;
 }
 
 /* Traffic widget ===============================================*/
@@ -352,10 +346,11 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 20px;
-  padding: 1rem 5px;
+  margin: 10px;
+  padding: 0rem 5px;
   border: 1px solid lightgrey;
   border-radius: 5px;
+
 }
 
 .social-icon {
@@ -392,7 +387,7 @@ main {
 
 .social-results p {
   margin-left: 1.1rem;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: lighter;
   color: gray;
 }
@@ -402,35 +397,23 @@ main {
 .new-members {
   grid-area: new-members;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   border: 1px solid lightgrey;
 }
 
 .member-card {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  align-content:center;
 }
 
 .profile-pic {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
-.member-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
 
 .name-address {
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 .member-info h4 {
@@ -440,7 +423,6 @@ main {
 }
 
 .member-info p {
-  text-align: left;
   margin: 0;
   font-size: .8rem;
   color: #7477bf;
@@ -477,8 +459,6 @@ main {
 }
 
 .activity-info {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -490,16 +470,13 @@ main {
 }
 
 .activity-info p {
-  text-align: left;
-  margin: 0;
   font-size: .8rem;
   color: #636363;
   color:darkslategrey;
 }
 
 .activity-info p.time {
-  text-align: left;
-  margin: 0;
+  margin-left: 40%;
   font-size: .8rem;
   color: #7477bf;
 }
@@ -510,11 +487,6 @@ main {
   border-right: 0;
   border-bottom: 0;
   border-left: 0;
-}
-
-.right-angle {
-  font-size: 2rem;
-  margin: 0 1rem;
 }
 
 /* Message user widget -------------------------------------------*/
@@ -748,7 +720,7 @@ color:darkslategrey;
     grid-template-areas:
       "header header header"
       "nav main main";
-  }
+}
   h3 {
     font-size: 1rem;
     margin-bottom: 1.5rem;
@@ -777,6 +749,10 @@ color:darkslategrey;
   .user {
     margin-right: 2rem;
   }
+
+  div.alert-container {
+    margin: 10px 0px 0px 0px;
+  }
   nav {
     flex-direction: column;
     justify-content: flex-start;
@@ -797,31 +773,17 @@ color:darkslategrey;
     "new-members recent-activity"
     "message-user settings";
   }
-  .dashboard {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    border-bottom: none;
-  }
-  .db-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
   
   .dashboard h2 {
   }
-
-  .dashboard-search-bg {
-    justify-content: flex-end;
-    align-items: center;
-    border: 1px solid black;
-    border-top: none;
-    border-right: none;
-    margin: 0;
-   
-    width: 80%;
+  
+  div.dashboard-search-bg {
+    background-color: #fafafa;
+    width: 100%;
+    padding: 15px;
+    margin-left: 1rem;
+    border-bottom: 3px solid lightgray;
+    border-left: 3px solid lightgray;
   }
 
   .alert-container {
@@ -830,7 +792,6 @@ color:darkslategrey;
   .widget {
     padding: 10px 20px;
     text-align: left;
-
   }
   .traffic {
     flex-direction: row;
@@ -839,11 +800,11 @@ color:darkslategrey;
     border-right: none;
     border-left: none;
   }
-  .card-container {
+.card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-  }
+   margin-left: 1rem;
+}
   .social-card {
     margin: 0 10px 10px 10px;
     padding: .5rem 5px;
@@ -864,6 +825,10 @@ color:darkslategrey;
     margin-left: .75rem;
     font-size: 1.7rem;
   }
+div.#members.new-members.widget {
+width: 100%;
+}
+
   p,
   img,
   .activity-info p,
@@ -871,6 +836,7 @@ color:darkslategrey;
   .right-angle {
     margin: 0 .5rem;
   }
+
   .member-info h4 {
     margin: 0 0 .25rem .9rem;
   }
