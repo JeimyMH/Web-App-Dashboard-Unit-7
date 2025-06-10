@@ -877,19 +877,6 @@ width: 100%;
 
 @media (min-width: 1024px) {
 
-      main {
-    grid-template-areas:
-    "dashboard"
-    "traffic"
-    "daily-traffic"
-    "mobile-users"
-    "social-stats"
-    "new-members"
-    "recent-activity"
-    "message-user"
-    "settings";
-  }
-
   .social-card {
     margin: 0 20px 20px 20px;
     padding: 1rem 5px;
@@ -911,12 +898,17 @@ width: 100%;
     margin-left: 1.1rem;
     font-size: 2.5rem;
   }
-div#members.new-members.widget{
-    grid-area: new-members recent-activity;
-    display: flex;
-    flex-direction: column;
+
+.member-card,
+.activity-info,
+.member-info {
+  display: flex;
+  align-items: center;
 }
 
+.member-date {
+  margin: auto 0;
+}
 
 }
 
