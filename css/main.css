@@ -392,8 +392,6 @@ main {
   color: gray;
 }
 
-/* New members widget --------------------------*/
-
 .new-members {
   grid-area: new-members;
   display: flex;
@@ -497,7 +495,7 @@ main {
 
 .user-fields,
 .message-fields {
-  display: flex;
+  
   flex-direction: column;
   align-items: center;
   margin: 20px; 
@@ -721,13 +719,10 @@ color:darkslategrey;
       "header header header"
       "nav main main";
 }
-  h3 {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-  }
   .widget h3 {
     margin-left: 0;
   }
+
   header {
     display: flex;
     flex-direction: row;
@@ -766,15 +761,15 @@ color:darkslategrey;
   }
   main {
     grid-template-areas:
-    "dashboard dashboard"
-    "traffic traffic"
-    "daily-traffic mobile-users"
-    "social-stats social-stats"
-    "new-members recent-activity"
-    "message-user settings";
-  }
-  
-  .dashboard h2 {
+    "dashboard"
+    "traffic"
+    "daily-traffic"
+    "mobile-users"
+    "social-stats"
+    "new-members"
+    "recent-activity"
+    "message-user"
+    "settings";
   }
   
   div.dashboard-search-bg {
@@ -825,10 +820,15 @@ color:darkslategrey;
     margin-left: .75rem;
     font-size: 1.7rem;
   }
-div.#members.new-members.widget {
+div#members.new-members.widget {
 width: 100%;
 }
-
+.member-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
   p,
   img,
   .activity-info p,
@@ -864,9 +864,31 @@ width: 100%;
   .buttons {
     margin-bottom: 0;
   }
-}
+  .toggles {
+    width: 50%;
+    display: flex;
+    align-items: left;
+    margin-left: 0%;
+  }
+  .slider.round {
+    width: 125%;
+    margin-left: 0;
+  }
 
 @media (min-width: 1024px) {
+
+      main {
+    grid-template-areas:
+    "dashboard"
+    "traffic"
+    "daily-traffic"
+    "mobile-users"
+    "social-stats"
+    "new-members"
+    "recent-activity"
+    "message-user"
+    "settings";
+  }
 
   .social-card {
     margin: 0 20px 20px 20px;
@@ -889,29 +911,13 @@ width: 100%;
     margin-left: 1.1rem;
     font-size: 2.5rem;
   }
-  .member-card {
-    padding: 0;
-    flex-grow: 1;
-  }
-  .member-info {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .member-info h4{
-    margin: 0 0 0 .9rem;
-  }
-  .activity-card {
-    flex-grow: 1;
-  }
-  .activity-info {
-    width: 100%;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-  .comment-time {
+div#members.new-members.widget{
+    grid-area: new-members recent-activity;
     display: flex;
     flex-direction: column;
-  }
+}
+
+
+}
+
 }
