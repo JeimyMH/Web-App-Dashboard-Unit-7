@@ -761,10 +761,10 @@ color:darkslategrey;
   }
   main {
     grid-template-areas:
-    "dashboard"
-    "traffic"
-    "daily-traffic"
-    "mobile-users"
+    "dashboard dashboard"
+    "traffic traffic"
+    "daily-traffic mobile-users"
+    "social-stats"
     "social-stats"
     "new-members"
     "recent-activity"
@@ -820,9 +820,6 @@ color:darkslategrey;
     margin-left: .75rem;
     font-size: 1.7rem;
   }
-div#members.new-members.widget {
-width: 100%;
-}
 .member-info {
     width: 100%;
     display: flex;
@@ -874,8 +871,18 @@ width: 100%;
     width: 125%;
     margin-left: 0;
   }
+}
 
 @media (min-width: 1024px) {
+    main {
+    grid-template-areas:
+    "dashboard dashboard"
+    "traffic traffic"
+    "daily-traffic mobile-users"
+    "social-stats social-stats"
+    "new-members recent-activity"
+    "message-user settings";
+  }
 
   .social-card {
     margin: 0 20px 20px 20px;
@@ -898,18 +905,17 @@ width: 100%;
     margin-left: 1.1rem;
     font-size: 2.5rem;
   }
-
-.member-card,
-.activity-info,
-.member-info {
+  .message-user{
+  border-right: 2px solid lightgray 
+  }
+  .settings {
+  border-right: 2px solid lightgray 
+  }
+ .toggles {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  margin: 5px 0;
 }
-
-.member-date {
-  margin: auto 0;
-}
-
-}
-
 }
