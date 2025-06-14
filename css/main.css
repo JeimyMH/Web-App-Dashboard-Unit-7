@@ -215,15 +215,16 @@ main {
 
 .dashboard-search-bg {
   background-color: #fafafa;
-  width:70%;
-  padding: 15px;
+  width: 70%;
+  padding: 10px;
+  margin: -15px;
   border-bottom: 3px solid lightgray;
   border-left: 3px solid lightgray;
 }
 
 .dashboard-search {
   width: 100%;
-  height: 3rem;
+  height: 2rem;
   margin: 10px 0;
   border-top-left-radius: 5px;
   border-top-right-radius: 0;
@@ -495,7 +496,7 @@ main {
 
 .user-fields,
 .message-fields {
-  
+  display:flex;
   flex-direction: column;
   align-items: center;
   margin: 20px; 

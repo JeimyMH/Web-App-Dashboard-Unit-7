@@ -9,32 +9,32 @@ const magBG = document.querySelector('.mag-bg');
 const userSearch = document.querySelector('.user-search');
 const userMessage = document.querySelector('.user-message');
 
-// Removes the alert when "X" is clicked
+
 alert.addEventListener('click', () => {
   alertContainer.innerHTML = "";
   dot.style.display = "none";
 });
 
-// Displays pop-up windows
+
 bell.addEventListener('click', () => {
   window.alert('Please read the alert in the banner below.');
   window.alert('When you\'re done, click the X to close the alert.');
 });
 
-// Creates box shadow on dashboard-search:focus
+
 dashboardSearch.addEventListener('focus', () => {
   magBG.style.boxShadow = '4px 0 4px 2px rgba(140, 140, 140, 0.2)';
 });
 
-// Removes box shadow after dashboard-search:blur
+
 dashboardSearch.addEventListener('blur', () => {
   magBG.style.boxShadow = '';
 });
 
-// Sets height of user-fields div equal to height of message-fields div
+
 userFields.style.height = messageFieldsHeight + 'px';
 
-// Listens for submit event on any child element in user-fields (through event bubbling)
+
 userFields.addEventListener('submit', (e) => {
   e.preventDefault();
   let user = userSearch.value;
