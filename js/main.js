@@ -4,7 +4,7 @@ const dot = document.querySelector('.dot');
 const bell = document.querySelector('.header-icon');
 const messageFieldsHeight = document.querySelector('.message-fields').clientHeight;
 const userFields = document.querySelector('.user-fields');
-const dashboardSearch = document.querySelector('.dashboard-search');
+const dashboardSearchbg = document.querySelector('.dashboard-search-bg');
 const magBG = document.querySelector('.mag-bg');
 const userSearch = document.querySelector('.user-search');
 const userMessage = document.querySelector('.user-message');
@@ -22,12 +22,12 @@ bell.addEventListener('click', () => {
 });
 
 
-dashboardSearch.addEventListener('focus', () => {
+dashboardSearchbg.addEventListener('focus', () => {
   magBG.style.boxShadow = '4px 0 4px 2px rgba(140, 140, 140, 0.2)';
 });
 
 
-dashboardSearch.addEventListener('blur', () => {
+dashboardSearchbg.addEventListener('blur', () => {
   magBG.style.boxShadow = '';
 });
 
