@@ -26,9 +26,10 @@ h1 {
 }
 
 h2 {
-  display: flex;
+
   font-size: 1rem;
   margin-left: 1rem;
+  margin-right: 1rem;
 
 }
 
@@ -57,10 +58,6 @@ h4 {
 p,
 img {
   margin: 0 1rem;
-}
-
-div {
-  padding: 5px 0 0 2px;
 }
 
 body {
@@ -207,6 +204,7 @@ div.dashboard {
 }
 
 .db-container {
+  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -483,7 +481,7 @@ div.dashboard {
 .message-fields {
   display:flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   margin: 20px; 
 }
 
@@ -524,9 +522,8 @@ div.dashboard {
 }
 
 .toggles {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 5px 0;
 }
@@ -605,7 +602,7 @@ option {
   position: absolute;
   cursor: pointer;
   top: 0;
-  left: 0;
+  left: 4rem;
   right: 0;
   bottom: 0;
   background-color: #ccc;
@@ -705,9 +702,7 @@ color:darkslategrey;
       "header header header"
       "nav main main";
 }
-  .widget h3 {
-    margin-left: 0;
-  }
+
 
   header {
     display: flex;
@@ -847,15 +842,9 @@ color:darkslategrey;
   .buttons {
     margin-bottom: 0;
   }
-  .toggles {
-    width: 50%;
-    display: flex;
-    align-items: left;
-    margin-left: 0%;
-  }
+
   .slider.round {
     width: 125%;
-    margin-left: 0;
   }
 }
 
@@ -898,7 +887,7 @@ color:darkslategrey;
   border-right: 2px solid lightgray 
   }
  .toggles {
-  width: 100%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
