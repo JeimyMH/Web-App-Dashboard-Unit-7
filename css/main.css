@@ -475,6 +475,7 @@ div.dashboard {
 
 .message-user {
   grid-area: message-user;
+
 }
 
 .user-fields,
@@ -488,7 +489,7 @@ div.dashboard {
 .user-search,
 .user-message {
   width: 100%;
-  margin: 10px;
+  margin: 10px 0 0;
   padding: 1rem;
   background-color: #fafafa;
   font-size: .9rem;
@@ -503,7 +504,7 @@ div.dashboard {
 
 .message-user-send {
   width: 100%;
-  margin: 10px;
+  margin: 10px 0 0;
   padding: 1rem 5px;
   background-color: #7477bf;
   color: #fff;
@@ -523,13 +524,15 @@ div.dashboard {
 
 .toggles {
   display: flex;
-  justify-content: space-around;
+  /*justify-content: space-around;*/
+  width: 100%;
   align-items: center;
   margin: 5px 0;
 }
 
 .toggles h3 {
-  margin: 0;
+  margin: 0 15px 0 0; 
+  flex-basis: 170px;
   text-transform: capitalize;
 }
 
@@ -541,7 +544,7 @@ div.dashboard {
   height: auto;
   outline: 0;
   width: 100%;
-  margin: 10px;
+  margin-top: 8px;
   padding: 1rem 5px;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
@@ -586,7 +589,7 @@ option {
 .switch {
   position: relative;
   display: inline-block;
-  width: 70px;
+  width: 100px;
   height: 36px;
 }
 
@@ -602,7 +605,7 @@ option {
   position: absolute;
   cursor: pointer;
   top: 0;
-  left: 4rem;
+  left: 0;
   right: 0;
   bottom: 0;
   background-color: #ccc;
@@ -631,9 +634,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(34px);
-  -ms-transform: translateX(34px);
-  transform: translateX(34px);
+  -webkit-transform: translateX(60px);
+  -ms-transform: translateX(60px);
+  transform: translateX(60px);
 }
 
 .slider:after {
@@ -884,10 +887,9 @@ color:darkslategrey;
   border-right: 2px solid lightgray 
   }
   .settings {
-  border-right: 2px solid lightgray 
+  margin-right: 15px;
   }
  .toggles {
-  width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
